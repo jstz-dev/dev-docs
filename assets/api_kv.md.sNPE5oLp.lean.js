@@ -1,0 +1,1 @@
+import{_ as t,c as a,ag as s,o as i}from"./chunks/framework.qSHG2lgv.js";const c=JSON.parse('{"title":"🪣 KV","description":"","frontmatter":{},"headers":[],"relativePath":"api/kv.md","filePath":"api/kv.md"}'),n={name:"api/kv.md"};function o(h,e,r,l,d,k){return i(),a("div",null,e[0]||(e[0]=[s("",20)]))}const u=t(n,[["render",o]]);export{c as __pageData,u as default};
