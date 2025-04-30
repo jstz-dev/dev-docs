@@ -1,1 +1,0 @@
-import{_ as a,c as i,ag as e,o as t}from"./chunks/framework.qSHG2lgv.js";const c=JSON.parse('{"title":"💻 CLI for jstz","description":"","frontmatter":{},"headers":[],"relativePath":"cli.md","filePath":"cli.md"}'),n={name:"cli.md"};function l(h,s,o,p,d,r){return t(),i("div",null,s[0]||(s[0]=[e("",73)]))}const g=a(n,[["render",l]]);export{c as __pageData,g as default};
