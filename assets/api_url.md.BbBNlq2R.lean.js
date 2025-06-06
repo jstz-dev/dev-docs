@@ -1,1 +1,0 @@
-import{_ as a,c as i,ag as e,o as t}from"./chunks/framework.qSHG2lgv.js";const c=JSON.parse('{"title":"🔗 URL","description":"","frontmatter":{},"headers":[],"relativePath":"api/url.md","filePath":"api/url.md"}'),n={name:"api/url.md"};function h(r,s,l,p,o,k){return t(),i("div",null,s[0]||(s[0]=[e("",48)]))}const E=a(n,[["render",h]]);export{c as __pageData,E as default};

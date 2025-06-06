@@ -1,1 +1,0 @@
-import{_ as a,c as n,ag as t,o as e}from"./chunks/framework.qSHG2lgv.js";const u=JSON.parse('{"title":"Sandbox","description":"","frontmatter":{},"headers":[],"relativePath":"sandbox.md","filePath":"sandbox.md"}'),i={name:"sandbox.md"};function o(p,s,l,d,c,h){return e(),n("div",null,s[0]||(s[0]=[t("",35)]))}const k=a(i,[["render",o]]);export{u as __pageData,k as default};
