@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Quick start | Jstz documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jstz-dev.github.io/dev-docs/quick_start"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Quick start | Jstz documentation"><meta data-rh="true" name="description" content="This guide will instruct you in writing, deploying, and using your first Jstz smart function."><meta data-rh="true" property="og:description" content="This guide will instruct you in writing, deploying, and using your first Jstz smart function."><link data-rh="true" rel="icon" href="/dev-docs/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://jstz-dev.github.io/dev-docs/quick_start"><link data-rh="true" rel="alternate" href="https://jstz-dev.github.io/dev-docs/quick_start" hreflang="en"><link data-rh="true" rel="alternate" href="https://jstz-dev.github.io/dev-docs/quick_start" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://XJJKSPLGTN-dsn.algolia.net" crossorigin="anonymous"><meta http-equiv="Content-Security-Policy" content=" default-src &#39;none&#39;; base-uri &#39;self&#39;; manifest-src &#39;self&#39;; script-src https://*.googletagmanager.com https://cdn.jsdelivr.net &#39;self&#39; &#39;unsafe-inline&#39;; style-src https://cdn.jsdelivr.net https://fonts.googleapis.com &#39;self&#39; &#39;unsafe-inline&#39;; font-src https://cdn.jsdelivr.net https://fonts.gstatic.com &#39;self&#39;; img-src &#39;self&#39; https://*.googletagmanager.com https://*.google-analytics.com data: &#39;unsafe-eval&#39;; media-src &#39;self&#39;; form-action &#39;self&#39;; connect-src &#39;self&#39; https://*.algolia.net https://*.algolianet.com https://*.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com;"><link rel="stylesheet" href="/dev-docs/assets/css/styles.cc84da15.css">
-<script src="/dev-docs/assets/js/runtime~main.2c329881.js" defer="defer"></script>
+<script src="/dev-docs/assets/js/runtime~main.3d6f8142.js" defer="defer"></script>
 <script src="/dev-docs/assets/js/main.ee3925f4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -12,7 +12,7 @@
 <h2 class="anchor anchorWithStickyNavbar_JmGV" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
 <ul>
 <li>
-<p>Install Node.JS, <code>npm</code>, and Docker.</p>
+<p>Install Node.JS version 22 or later, <code>npm</code>, and Docker.</p>
 </li>
 <li>
 <p>Install Jstz as described in <a href="/dev-docs/installation">Installation</a>.</p>
@@ -35,7 +35,7 @@ Jstz smart functions run on the Tezos blockchain via <a href="https://docs.tezos
 <li>Smart functions have built-in authentication via user account encryption keys</li>
 </ul>
 <p>Also, because smart functions run on a Tezos Smart Rollup instead of directly on Tezos, they have the additional benefits of low gas cost and reduced latency that Tezos layer 2 provides.</p>
-<h2 class="anchor anchorWithStickyNavbar_JmGV" id="1-a-sample-smart-function">1. A sample smart function<a href="#1-a-sample-smart-function" class="hash-link" aria-label="Direct link to 1. A sample smart function" title="Direct link to 1. A sample smart function"> ​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_JmGV" id="1-a-sample-smart-function">1. A sample smart function<a href="#1-a-sample-smart-function" class="hash-link" aria-label="Direct link to 1. A sample smart function" title="Direct link to 1. A sample smart function">​</a></h2>
 <p>Like smart contracts, you compile and deploy smart functions and then they cannot be changed.
 However, smart functions behave more like web applications because they accept requests and return responses in a way similar to ordinary web-based HTTP requests.</p>
 <p>The sample smart function in the <code>examples/counter</code> folder of the Jstz repository stores an integer and allows users to retrieve it or change it by adding or subtracting 1.
@@ -130,17 +130,11 @@ Jstz provides a command-line command to call smart functions that you can use to
 Jstz currently has a browser-based wallet for development purposes.</p>
 <div class="theme-admonition theme-admonition-note admonition_WCGJ alert alert--secondary"><div class="admonitionHeading_GCBg"><span class="admonitionIcon_L39b"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_pbrs"><p>This wallet is for use in development.
 It is not yet secure enough to use in production applications.</p></div></div>
-<ol>
-<li>
-<p>Install the Chrome web browser.</p>
 <div class="theme-admonition theme-admonition-note admonition_WCGJ alert alert--secondary"><div class="admonitionHeading_GCBg"><span class="admonitionIcon_L39b"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_pbrs"><p>The Jstz dev wallet supports only the Chrome web browser.</p></div></div>
-</li>
+<ol>
 <li>
 <p>Download the source code for the dev wallet:</p>
 <div class="language-bash codeBlockContainer_mQmQ theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_D5yF"><pre tabindex="0" class="prism-code language-bash codeBlock_RMoD thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_AclH"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/jstz-dev/dev-wallet.git</span><br></span></code></pre><div class="buttonGroup_aaMX"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_z5j7" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_FoOz"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_L0B6"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-</li>
-<li>
-<p>Install Node.JS version 22 or later.</p>
 </li>
 <li>
 <p>Go into the repository, install the dependencies, and build the wallet:</p>
@@ -157,7 +151,7 @@ It is not yet secure enough to use in production applications.</p></div></div>
 <p>The Jstz dev wallet appears in the list of extensions in the browser.</p>
 </li>
 <li>
-<p>Create an account in the dev wallet by clicking the extension icon and then clicking <strong>Generate new wallet</strong>.</p>
+<p>Create an account in the dev wallet by clicking the extension icon and then clicking <strong>Generate account</strong>.</p>
 </li>
 </ol>
 <p>Now when you click the extension, it shows your account.
@@ -170,9 +164,10 @@ Follow these steps to run a sample web application that uses your smart function
 <li>
 <p>On the same system as you are running the Jstz sandbox, build and run the <code>web-call-to-jstz</code> sample application from the <code>dev-wallet</code> repository:</p>
 <div class="language-sh codeBlockContainer_mQmQ theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_D5yF"><pre tabindex="0" class="prism-code language-sh codeBlock_RMoD thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_AclH"><span class="token-line" style="color:#393A34"><span class="token plain">cd examples/web-call-to-jstz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pnpm i</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pnpm dev</span><br></span></code></pre><div class="buttonGroup_aaMX"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_z5j7" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_FoOz"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_L0B6"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>The response includes the URL that the application is running at, such as <code>http://localhost:3201</code>.</p>
 </li>
 <li>
-<p>Open the application in Chrome at <code>http://localhost:3000</code>.</p>
+<p>Open the application in the Chrome web browser.</p>
 </li>
 <li>
 <p>Paste the address of your smart function into the web application.</p>
